@@ -1,0 +1,522 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 13.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+This Encounter release has been compiled with OA version 22.43-p014.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.18-s012_1 (64bit) 02/20/2014 17:22 (Linux 2.6)
+@(#)CDS: NanoRoute v13.17-s002 NR131126-2202/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.18-s009_1 (64bit) 02/18/2014 08:01:17 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.18-s001 (64bit) 02/20/2014 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.18-s006_1 (64bit) Feb 20 2014 10:26:27 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.18-s007
+@(#)CDS: IQRC/TQRC 12.1.1-s225 (64bit) Wed Jun 12 20:28:41 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.18-s012_1" on Mon Apr  4 12:08:47 2022 (mem=73.5M) ---
+--- Running on engr-e132-d16.engr.siu.edu (x86_64 w/Linux 3.10.0-1127.13.1.el7.x86_64) ---
+This version was compiled on Thu Feb 20 17:22:15 PST 2014.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> dbGet top.name
+<CMD> win
+*** Memory pool thread-safe mode activated.
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file /cadence/GPDK/aci/sc/lef/tsmc18_6lm.lef
+<CMD> set init_design_settop 0
+<CMD> set init_verilog Adder8.v
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file /cadence/GPDK/aci/sc/lef/tsmc18_6lm.lef...
+Set DBUPerIGU to M2 pitch 1320.
+WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+Without BUSBITCHARS defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /cadence/GPDK/aci/sc/lef/tsmc18_6lm.lef at line 64695.
+WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+Without DIVIDECHAR defined, the LEF file is technically incorrect.
+Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file /cadence/GPDK/aci/sc/lef/tsmc18_6lm.lef at line 64695.
+**ERROR: (ENCLF-81):	No MANUFACTURINGGRID value was given. It is set to
+minimum LEF unit of 0.0005 um. If this value is not right, a MANUFACTURINGGRID
+statement must be added in the technology LEF file.
+
+viaInitial starts at Mon Apr  4 12:20:30 2022
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM1 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM2 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM3 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM4 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM5 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM6 GENERATE
+viaInitial ends at Mon Apr  4 12:20:30 2022
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'Adder8.v'
+
+*** Memory Usage v#1 (Current mem = 504.402M, initial mem = 73.477M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=504.4M) ***
+Top level cell is Adder8.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.83min, fe_real=11.82min, fe_mem=504.4M) ***
+
+{DETAILMESSAGE}Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell Adder8 ...
+*** Netlist is unique.
+** info: there are 479 modules.
+** info: there are 40 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 514.566M, initial mem = 73.477M) ***
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Generated pitch 0.99 in METAL6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in METAL5 is different from 1.12 defined in technology file in preferred direction.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+
+**WARN: (ENCSYT-7328):	Active setup and hold analysis views were not provided by the -setup and -hold arguments to initDesign. The system requires at least one active setup and hold analysis view to be declared before any timing commands can be run. If you need to run timing commands, you can add the -setup and -hold options to your init_design invocation.  You can use the all_analysis_view command to identify the currently available views.
+<CMD> fit
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site tsm3site -r 1 0.85 1 2 1 2
+Adjusting Core to Left to: 1.3200. Core to Bottom to: 2.2400.
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Generated pitch 0.99 in METAL6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in METAL5 is different from 1.12 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> addRing -stacked_via_top_layer METAL6 -around core -jog_distance 0.66 -threshold 0.66 -nets {VDD VSS} -stacked_via_bottom_layer METAL1 -layer {bottom METAL1 top METAL1 right METAL2 left METAL2} -width 0.72 -spacing 0.46 -offset 0.66
+
+**WARN: (ENCPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 526.2M) ***
+<CMD> clearGlobalNets
+<CMD> globalNetConnect VDD -type tiehi -inst * -module {}
+<CMD> globalNetConnect VSS -type tielo -inst * -module {}
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+**WARN: (ENCSP-9513):	Timing constraint file does not exist
+**WARN: (ENCSP-9514):	NonTimingDriven placement will be performed
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v#1 (mem=529.4M)" ...
+Options: clkGateAware ignoreScan ignoreSpare pinGuide congEffort=auto gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored.
+Define the scan chains before using this option.
+#std cell=40 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=57 #term=170 #term/net=2.98, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=26
+stdCell: 40 single + 0 double + 0 multi
+Total standard cell length = 0.1267 (mm), area = 0.0006 (mm^2)
+Average module density = 0.853.
+Density for the design = 0.853.
+       = stdcell_area 192 sites (639 um^2) / alloc_area 225 sites (748 um^2).
+Pin Density = 0.885.
+            = total # of pins 170 / total Instance area 192.
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 531.7M
+Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 531.7M
+Iteration  3: Total net bbox = 1.723e+00 (7.42e-01 9.82e-01)
+              Est.  stn bbox = 1.723e+00 (7.42e-01 9.82e-01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 531.7M
+Iteration  4: Total net bbox = 7.213e+01 (2.52e+01 4.70e+01)
+              Est.  stn bbox = 7.213e+01 (2.52e+01 4.70e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 531.7M
+Iteration  5: Total net bbox = 2.616e+02 (2.01e+02 6.01e+01)
+              Est.  stn bbox = 2.616e+02 (2.01e+02 6.01e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 531.7M
+Iteration  6: Total net bbox = 4.264e+02 (2.73e+02 1.53e+02)
+              Est.  stn bbox = 4.426e+02 (2.85e+02 1.58e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 531.7M
+*** cost = 4.264e+02 (2.73e+02 1.53e+02) (cpu for global=0:00:00.0) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:00.0
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode.
+[CPU] RefinePlace/preRPlace (cpu=0:00:00.0, real=0:00:00.0, mem=531.7MB) @(0:01:51 - 0:01:51).
+move report: preRPlace moves 40 insts, mean move: 2.70 um, max move: 5.69 um
+	max move on inst (i_42): (27.52, 21.93) --> (26.40, 17.36)
+wireLenOptFixPriorityInst 0 inst fixed
+Placement tweakage begins.
+wire length = 5.424e+02 = 2.994e+02 H + 2.430e+02 V
+wire length = 5.338e+02 = 2.908e+02 H + 2.430e+02 V
+Placement tweakage ends.
+move report: tweak moves 5 insts, mean move: 4.22 um, max move: 5.94 um
+	max move on inst (i_3220): (17.16, 22.40) --> (23.10, 22.40)
+Clock gating cells determined by native netlist tracing.
+Wire length optimization begins.
+Wire length optimization ends. (0:00:00.0)
+move report: xdp moves 8 insts, mean move: 6.12 um, max move: 12.30 um
+	max move on inst (i_3224): (14.52, 7.28) --> (21.78, 12.32)
+[CPU] RefinePlace/WireLenOpt (cpu=0:00:00.0, real=0:00:00.0, mem=531.7MB) @(0:01:51 - 0:01:51).
+[CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=531.7MB) @(0:01:51 - 0:01:51).
+move report: rPlace moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+move report: overall moves 40 insts, mean move: 3.15 um, max move: 10.09 um
+	max move on inst (i_3224): (15.41, 8.60) --> (21.78, 12.32)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        10.09 um
+  inst (i_3224) with max move: (15.4105, 8.5955) -> (21.78, 12.32)
+  mean    (X+Y) =         3.15 um
+Total instances flipped for WireLenOpt: 14
+Total instances moved : 40
+*** cpu=0:00:00.0   mem=531.7M  mem(used)=0.0M***
+[CPU] RefinePlace/total (cpu=0:00:00.0, real=0:00:00.0, mem=531.7MB) @(0:01:51 - 0:01:51).
+Total net length = 5.272e+02 (2.824e+02 2.448e+02) (ext = 3.184e+02)
+*** End of Placement (cpu=0:00:00.2, real=0:00:00.0, mem=531.7M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 1 )
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+Starting congestion repair ...
+*** Starting trialRoute (mem=532.7M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -noPinGuide
+
+
+Phase 1a-1d Overflow: 0.00% H + 0.00% V (0:00:00.0 536.5M)
+
+Overflow: 0.00% H + 0.00% V (0:00:00.0 537.1M)
+
+Phase 1l Overflow: 0.00% H + 0.00% V (0:00:00.0 537.1M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  4:	0	 0.00%	1	 1.43%
+  5:	70	100.00%	69	98.57%
+
+
+Total length: 5.191e+02um, number of vias: 258
+M1(H) length: 0.000e+00um, number of vias: 144
+M2(V) length: 2.769e+02um, number of vias: 105
+M3(H) length: 2.275e+02um, number of vias: 7
+M4(V) length: 1.428e+01um, number of vias: 2
+M5(H) length: 4.560e-01um, number of vias: 0
+M6(V) length: 0.000e+00um
+
+Peak Memory Usage was 542.6M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=532.7M) ***
+
+CongRepair Bin Grid Size (width, height) = ( default_value , default_value )
+Trial Route Overflow 0.000000(H) 0.000000(V).
+Skipped repairing congestion.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 0, mem = 532.7M **
+<CMD> setDrawView place
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+<CMD> setNanoRouteMode -quiet -drouteStartIteration default
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven false
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+Begin checking placement ... (start mem=535.9M, init mem=535.9M)
+*info: Placed = 40
+*info: Unplaced = 0
+Placement Density:85.33%(639/748)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=535.9M)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=535.9M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Mon Apr  4 12:42:31 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 535.00 (Mb)
+#WARNING (NRDB-976) The TRACK STEP 0.5600 for preferred direction tracks is smaller than the PITCH 1.1200 for LAYER METAL5. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The TRACK STEP 0.9900 for preferred direction tracks is smaller than the PITCH 1.3200 for LAYER METAL6. This will cause routability problems for NanoRoute.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 569.00 (Mb)
+#NanoRoute Version v13.17-s002 NR131126-2202/13_10-UB
+#Start routing data preparation.
+#WARNING (NREX-28) The height of the first routing layer METAL1 is 0.000000. It should be larger than 0.000000.
+#WARNING (NREX-29) The metal thickness of routing layer METAL1 is 0.000000. It should be larger than 0.0. Add this to the technology information for better accuracy.
+#WARNING (NREX-30) Please also check the height and metal thickness values for the routing layers higher than routing layer METAL1.
+# METAL1       H   Track-Pitch = 0.560    Line-2-Via Pitch = 0.485
+# METAL2       V   Track-Pitch = 0.660    Line-2-Via Pitch = 0.610
+# METAL3       H   Track-Pitch = 0.560    Line-2-Via Pitch = 0.560
+# METAL4       V   Track-Pitch = 0.660    Line-2-Via Pitch = 0.610
+# METAL5       H   Track-Pitch = 0.560    Line-2-Via Pitch = 0.560
+# METAL6       V   Track-Pitch = 0.990    Line-2-Via Pitch = 0.950
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer METAL2's pitch = 0.660.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 570.00 (Mb)
+#Merging special wires...
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Mon Apr  4 12:42:31 2022
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Mon Apr  4 12:42:31 2022
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H          53           0           9    33.33%
+#  Metal 2        V          49           0           9     0.00%
+#  Metal 3        H          52           0           9     0.00%
+#  Metal 4        V          49           0           9     0.00%
+#  Metal 5        H          52           0           9     0.00%
+#  Metal 6        V          32           0           9     0.00%
+#  --------------------------------------------------------------
+#  Total                    287       0.00%  54     5.56%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 570.00 (Mb)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 571.00 (Mb)
+#
+#start global routing iteration 2...
+#There are 57 nets routed.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 571.00 (Mb)
+#
+#start global routing iteration 3...
+#There are 57 nets routed.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 571.00 (Mb)
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#   Metal 1      0(0.00%)   (0.00%)
+#   Metal 2      0(0.00%)   (0.00%)
+#   Metal 3      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#
+#Complete Global Routing.
+#Total wire length = 266 um.
+#Total half perimeter of net bounding box = 593 um.
+#Total wire length on LAYER METAL1 = 0 um.
+#Total wire length on LAYER METAL2 = 98 um.
+#Total wire length on LAYER METAL3 = 168 um.
+#Total wire length on LAYER METAL4 = 0 um.
+#Total wire length on LAYER METAL5 = 0 um.
+#Total wire length on LAYER METAL6 = 0 um.
+#Total number of vias = 171
+#Up-Via Summary (total 171):
+#           
+#-----------------------
+#  Metal 1          123
+#  Metal 2           43
+#  Metal 3            3
+#  Metal 4            2
+#-----------------------
+#                   171 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#There are 57 nets routed.
+#start post global routing...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 571.00 (Mb)
+#
+#Start data preparation for track assignment...
+#
+#Data preparation is done on Mon Apr  4 12:42:31 2022
+#
+#Start Track Assignment.
+#Complete Track Assignment.
+#Total wire length = 231 um.
+#Total half perimeter of net bounding box = 593 um.
+#Total wire length on LAYER METAL1 = 0 um.
+#Total wire length on LAYER METAL2 = 85 um.
+#Total wire length on LAYER METAL3 = 146 um.
+#Total wire length on LAYER METAL4 = 0 um.
+#Total wire length on LAYER METAL5 = 0 um.
+#Total wire length on LAYER METAL6 = 0 um.
+#Total number of vias = 171
+#Up-Via Summary (total 171):
+#           
+#-----------------------
+#  Metal 1          123
+#  Metal 2           43
+#  Metal 3            3
+#  Metal 4            2
+#-----------------------
+#                   171 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 571.00 (Mb)
+#
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 2.00 (Mb)
+#Total memory = 571.00 (Mb)
+#Peak memory = 604.00 (Mb)
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 583.00 (Mb)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 583.00 (Mb)
+#Complete Detail Routing.
+#Total wire length = 485 um.
+#Total half perimeter of net bounding box = 593 um.
+#Total wire length on LAYER METAL1 = 37 um.
+#Total wire length on LAYER METAL2 = 244 um.
+#Total wire length on LAYER METAL3 = 195 um.
+#Total wire length on LAYER METAL4 = 6 um.
+#Total wire length on LAYER METAL5 = 3 um.
+#Total wire length on LAYER METAL6 = 0 um.
+#Total number of vias = 232
+#Up-Via Summary (total 232):
+#           
+#-----------------------
+#  Metal 1          142
+#  Metal 2           85
+#  Metal 3            3
+#  Metal 4            2
+#-----------------------
+#                   232 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 1.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 604.00 (Mb)
+#detailRoute Statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 1.00 (Mb)
+#Total memory = 572.00 (Mb)
+#Peak memory = 604.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 572.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 570.00 (Mb)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 35.00 (Mb)
+#Total memory = 570.00 (Mb)
+#Peak memory = 604.00 (Mb)
+#Number of warnings = 5
+#Total number of warnings = 5
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Mon Apr  4 12:42:32 2022
+#
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Mon Apr  4 12:45:16 2022
+
+Design Name: Adder8
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (32.1360, 29.4400)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Mon Apr  4 12:45:16 2022
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> getIoFlowFlag
+<CMD> setFPlanRowSpacingAndType 1 2
+Row spacing should be multiple first horizontal routing layer pitch.
+adjust row spacing to 1.12.
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site tsm3site -r 0.845183793936 0.850013 1.32 2.24 1.0 2.0
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Generated pitch 0.99 in METAL6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in METAL5 is different from 1.12 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site tsm3site -r 0.542421268623 0.765014 1.32 2.24 1.0 2.0
+Horizontal Layer M1 offset = 560 (derived)
+Vertical Layer M2 offset = 660 (derived)
+Generated pitch 0.99 in METAL6 is different from 1.32 defined in technology file in preferred direction.
+Generated pitch 0.56 in METAL5 is different from 1.12 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+
+*** Memory Usage v#1 (Current mem = 572.125M, initial mem = 73.477M) ***
+--- Ending "Encounter" (totcpu=0:02:44, real=0:40:19, mem=572.1M) ---
